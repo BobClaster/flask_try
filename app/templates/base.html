@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header>
+        <div>
+            Microblog:
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+        </div>
+    </header>
+    {% block index %}
+    {% endblock %}
+
+    {% block login_form %}
+    {% endblock %}
+</body>
+</html>
