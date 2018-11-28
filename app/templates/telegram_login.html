@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block login_form %}
+    <form action="/send_code" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.phone_numb.label }}<br>
+            {{ form.phone_numb(size=32) }}
+        </p>
+        <button type="submit">Send code</button>
+    </form>
+{% endblock %}
