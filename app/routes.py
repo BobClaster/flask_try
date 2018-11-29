@@ -53,7 +53,7 @@ def send_code():
         client.send_code_request(form.phone_numb.data)
         client.disconnect()
 
-        tel_numb = form.phone_numb
+        tel_numb = form.phone_numb.data
     return render_template("telegram_send_code.html", title="login", form=form, tel_numb=tel_numb)
 
 

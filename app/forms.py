@@ -13,4 +13,3 @@ class LoginForm(FlaskForm):
 class LoginTelegram(FlaskForm):
     phone_numb = StringField('Your phone')
     code = StringField('Code')
-    # submit = SubmitField('Sign In')
